@@ -1,0 +1,19 @@
+[package]
+name = "shared"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+base64 = "0.22.1"
+configfs-tsm = { workspace = true }
+ed25519-dalek = { workspace = true }
+hex = { workspace = true }
+rand = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+sha2 = { workspace = true }
+tdx-quote = { workspace = true }
+thiserror = { workspace = true }
+
+[build-dependencies]
+prost-build = "0.12"

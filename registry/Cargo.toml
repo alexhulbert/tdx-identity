@@ -1,0 +1,27 @@
+[package]
+name = "tdx_registry"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "tdx-registry"
+path = "src/main.rs"
+
+[dependencies]
+rand = "0.8.5"
+
+shared = { path = "../shared" }
+axum = { workspace = true }
+bincode = "1.3.3"
+configfs-tsm = { workspace = true }
+dcap-qvl = "0.1.3"
+ed25519-dalek = { workspace = true }
+hex = { workspace = true }
+lazy_static = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+sha2 = { workspace = true }
+sled = "0.34.7"
+tdx-quote = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true }

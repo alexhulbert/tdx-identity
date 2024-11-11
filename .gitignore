@@ -1,0 +1,7 @@
+/target
+/.venv
+/tdx-store-unencrypted
+__pycache__/
+.pytest_cache/
+.claudeignore
+/.claudesync

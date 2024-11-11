@@ -1,0 +1,32 @@
+[package]
+name = "tdx_identity_svc"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "identity-svc"
+path = "src/main.rs"
+
+[dependencies]
+shared = { path = "../shared" }
+async-trait = "0.1.51"
+axum = { workspace = true }
+configfs-tsm = { workspace = true }
+ed25519-dalek = { workspace = true }
+futures-util = { version = "0.3.31" }
+hex = { workspace = true }
+lazy_static = { workspace = true }
+podman-api = "0.10.0"
+rand = { workspace = true }
+reqwest = { version = "0.12.9", features = ["json"] }
+russh = "0.46.0"
+russh-keys = "0.46.0"
+serde = { workspace = true }
+serde_json = { workspace = true }
+sha2 = { workspace = true }
+tdx-quote = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true }
+
+[build-dependencies]
+prost-build = "0.12"
